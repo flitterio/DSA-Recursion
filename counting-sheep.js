@@ -1,13 +1,18 @@
 const sheepCount = function(sheep) {
 
-for(let i = sheep; i >= 0; i--){ 
-        
- if(i === 0){
+    if (sheep === 0){
         return 'All sheep jumped over the fence';
-    }  
-
-    console.log( i  + ': Another Sheep jumps over the fence');  
     }
+    return (`${sheep}: Another shep jumps over the fence \n` + sheepCount(sheep-1))
+
+// for(let i = sheep; i >= 0; i--){ 
+        
+//  if(i === 0){
+//         return 'All sheep jumped over the fence';
+//     }  
+
+//     console.log( i  + ': Another Sheep jumps over the fence');  
+//     }
 
 }
  
